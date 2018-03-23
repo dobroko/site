@@ -263,27 +263,33 @@ section h4.section-subheading {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
     background-color: #ff3366;
+    border-radius: 5px;
 }
 .navbar-default .nav li a {
+    font-size: 10px;
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
     color: #4d4d4d;
+    border-radius: 5px;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
     color: #ff3366;
+    border-radius: 5px;
 }
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
     background-color: #ff3366;
+    border-radius: 5px;
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
     background-color: #ff3366;
+    border-radius: 5px;
 }
 
 @media(min-width:992px) {
@@ -302,7 +308,7 @@ section h4.section-subheading {
         transition: all .3s;
     }
     .navbar-default .navbar-nav>.active>a {
-        border-radius: 0px;
+        border-radius: 5px;
     }
     .navbar-default.navbar-shrink {
         padding: 10px 0;
