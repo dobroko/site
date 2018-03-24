@@ -36,5 +36,3 @@ wow.init();
 $(function(){
 	$('#portfolio-items').mixItUp();
 });
-
-// Contact form
