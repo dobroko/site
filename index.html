@@ -359,8 +359,13 @@
                 </div>
                 <div class="col-md-6 col-md-push-3 col-sm-8 col-sm-push-2 text-center">
                     <form id="newsletter" name="newsletter" role="form" method="post">
-                        <input name="user_phone" type="phone" id="user_phone" class="form-control text-center" placeholder="введите номер телефона" required>
-                        <input name="user_email" type="email" id="user_email" class="form-control text-center" placeholder="введите адрес электронной почты" required>
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="DobroKod">
+                        <input type="hidden" name="admin_email" value="dobrokod@gmail.com">
+                        <input type="hidden" name="form_subject" value="Form Subject">
+                        <!-- END Hidden Required Fields -->
+                        <input name="Name" type="phone" id="user_phone" class="form-control text-center" placeholder="введите номер телефона" required>
+                        <input name="E-mail" type="email" id="user_email" class="form-control text-center" placeholder="введите адрес электронной почты" required>
                         <button id="btn_submit" type="submit" class="btn btn-xl btn-submit">Отправить</button>
                     </form>
                 </div>

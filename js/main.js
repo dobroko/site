@@ -39,24 +39,23 @@ $(function(){
 
 // Contact form
 
-//$(document).ready(function(){
-            $('#btn_submit').click(function(){
-                // собираем данные с формы
-                var user_phone = $('#user_phone').val();
-                var user_email = $('#user_email').val();
-                // отправляем данные
-                $.ajax({
-                    url: "action.php", // куда отправляем
-                    type: "post", // метод передачи
-                    dataType: "json", // тип передачи данных
-                    data: { // что отправляем
-                        "user_phone": user_phone,
-                        "user_email": user_email,
-                    },
-                    // после получения ответа сервера
-                    success: function(response){
-                        $('#messages').append(response.result); // выводим ответ сервера
-                    }
-                });
-            });
-      //  });
+$(document).ready(function() {
+
+    //E-mail Ajax Send
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Thank you!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
+
+});
