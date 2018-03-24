@@ -38,7 +38,3 @@ $(function(){
 });
 
 // Contact form
-$('#newsletter').on('submit', function(e) {
-      $('#newsletter *').fadeOut(2000);
-      $('#newsletter').prepend('Ваша заявка отправлена, через некоторое время мы с Вами свяжемся');
-});
