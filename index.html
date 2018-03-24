@@ -358,12 +358,13 @@
                     <h1 class="section-heading">Оставьте нам свою заявку</h1>
                 </div>
                 <div class="col-md-6 col-md-push-3 col-sm-8 col-sm-push-2 text-center">
-                    <form name="newsletter" role="form" action="#" method="post">
-                        <input type="phone" class="form-control text-center" id="InputEmail" placeholder="введите номер телефона" required>
-                        <input type="email" class="form-control text-center" id="InputEmail" placeholder="введите адрес электронной почты" required>
-                        <button type="submit" class="btn btn-xl btn-submit">Отправить</button>
+                    <form id="newsletter" name="newsletter" role="form" method="post">
+                        <input name="user_phone" type="phone" id="user_phone" class="form-control text-center" placeholder="введите номер телефона" required>
+                        <input name="user_email" type="email" id="user_email" class="form-control text-center" placeholder="введите адрес электронной почты" required>
+                        <button id="btn_submit" type="submit" class="btn btn-xl btn-submit">Отправить</button>
                     </form>
                 </div>
+                <div id="messages" class="col-md-6 col-md-push-3 col-sm-8 col-sm-push-2 text-center"></div>
             </div>
         </div>
     </section>

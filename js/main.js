@@ -36,3 +36,27 @@ wow.init();
 $(function(){
 	$('#portfolio-items').mixItUp();
 });
+
+// Contact form
+
+//$(document).ready(function(){
+            $('#btn_submit').click(function(){
+                // собираем данные с формы
+                var user_phone = $('#user_phone').val();
+                var user_email = $('#user_email').val();
+                // отправляем данные
+                $.ajax({
+                    url: "action.php", // куда отправляем
+                    type: "post", // метод передачи
+                    dataType: "json", // тип передачи данных
+                    data: { // что отправляем
+                        "user_phone": user_phone,
+                        "user_email": user_email,
+                    },
+                    // после получения ответа сервера
+                    success: function(response){
+                        $('#messages').append(response.result); // выводим ответ сервера
+                    }
+                });
+            });
+      //  });
