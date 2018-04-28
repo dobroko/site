@@ -993,6 +993,7 @@ ul.social-buttons li a:active {
     padding-bottom: 70px;
 }
 .pricingTable{
+    background: #ffffffad;
     border: 1px solid #e7e7e7;
     text-align: center;
     padding: 0 30px 30px;
