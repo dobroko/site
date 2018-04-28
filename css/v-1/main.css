@@ -1005,7 +1005,7 @@ ul.social-buttons li a:active {
     width: 210px;
     background: #ff3366;
     color: #fff;
-    margin: -15px auto 95px;
+    margin: -15px auto 70px;
     padding-top: 35px;
     position: relative;
 }
@@ -1053,7 +1053,7 @@ ul.social-buttons li a:active {
 .pricingTable .pricing-content ul{
     list-style: none;
     padding: 0;
-    margin: 0 0 25px 0;
+    margin: 0 0 40px 0;
 }
 .pricingTable .pricing-content ul li{
     font-size: 14px;
