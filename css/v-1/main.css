@@ -379,7 +379,7 @@ header .header-text .header-heading {
 
     header .header-text .header-heading {
         margin-bottom: 50px;
-        font-size: 82px;
+        font-size: 60px;
         line-height: 75px;
     }
 }
@@ -532,6 +532,9 @@ header .header-text .header-heading {
         padding: 10px 20px;
     }
 }
+.btn-servis{
+    margin-top: 40px;
+}
 
 /* Portfolio Section */
 #portfolio-items .mix{
@@ -651,7 +654,9 @@ header .header-text .header-heading {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
+.otstyp{
+    padding: 68px;
+}
 
 
 /* About Section */
@@ -779,7 +784,6 @@ header .header-text .header-heading {
 /* Team Members */
 #team {
     background-image: url('../../img/header-bg-3.jpg');
-    height: 100vh;
     background-attachment: scroll;
     background-position: center center;
     background-repeat: none;
@@ -985,106 +989,91 @@ ul.social-buttons li a:active {
 }
 
 /* цены */
-.plans {
-    background:#f5f5f5;
-    padding:5em 0 2em 0;
+.pricing-heading{
+    padding-bottom: 70px;
 }
-.pricing {
-    background: #fff;
+.pricingTable{
+    border: 1px solid #e7e7e7;
     text-align: center;
-    border-radius: 5px;
+    padding: 0 30px 30px;
+    transition: all 0.5s ease 0s;
 }
-.pricing-heading {
-    margin-bottom: 25px;
+.pricingTable:hover{
+    border: 1px solid #ff3366;
 }
-.pricing_top h6 {
-  margin: 0;
-  color: #c65757;
-  font-weight: bold;
-  text-transform: uppercase;
-    font-size: 16px;
-}
-.pricing_top { 
-  padding: 35px 0;
-  background-color: #ff3366;
-  border-radius: 5px; }
-.pricing_top h6 {
-    margin: 0 0 20px 0;
-    color: #2D2D2D;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.pricing_top p {
+.pricingTable .pricingTable-header{
+    width: 210px;
+    background: #ff3366;
     color: #fff;
-    font-size: 38px;
-    font-weight: bold;
+    margin: -15px auto 95px;
+    padding-top: 35px;
+    position: relative;
 }
-.pricing_top sup {
-    font-weight: normal;
+.pricingTable .pricingTable-header:before{
+    content: "";
+    border-width: 0 0 15px 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff3366;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.pricingTable .pricingTable-header:after{
+    content: "";
+    border-width: 15px 0 0 10px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ff3366;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.pricingTable .heading{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 5px 0;
+    text-transform: uppercase;
+    position: relative;
+}
+.pricingTable .heading:after{
+    content: "";
+    border-width: 60px 105px 0;
+    border-style: solid;
+    border-color: #ff3366 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: -108px;
+    left: 0;
+}
+.pricingTable .currency,
+.pricingTable .month{
     font-size: 20px;
 }
-.pricing_middle ul {
-    margin-left: 0; /* Отступ слева в браузере IE и Opera */
-    padding-left: 0;
+.pricingTable .price-value{
+    font-size: 30px;
 }
-.pricing_middle ul li {
-    padding:25px;
-    border-top:1px solid #B2B2B2;
-  color: #111;
-  font-size: 14px;
-  line-height: 25px;
-  list-style-type: none;
+.pricingTable .pricing-content ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
 }
-.pricing_middle ul li:first-child {
-    border-top: none;
+.pricingTable .pricing-content ul li{
+    font-size: 14px;
+    color: #334a6b;
+    line-height: 40px;
 }
-.pricing_middle ul li i {
-    -webkit-transition:all 200ms ease-in;
-    -o-transition:all 200ms ease-in;
-    -moz-transition:all 200ms ease-in;
-    transition:all 200ms ease-in;
+.pricingTable .pricingTable-signup{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334a6b;
+    text-transform: capitalize;
+    border: 2px solid #e7e7e7;
+    padding: 10px 40px;
+    transition: all 0.5s ease 0s;
 }
-.pricing_middle ul li:hover i {
-    color: #c65757;
-    -webkit-transition:all 200ms ease-in;
-    -o-transition:all 200ms ease-in;
-    -moz-transition:all 200ms ease-in;
-    transition:all 200ms ease-in;
+.pricingTable .pricingTable-signup:hover{
+    border: 2px solid #ff3366;
 }
-.pricing_middle ul li i {
-    color: #aaa;
-    padding-right:25px;
-}
-.one_third {
-  width: 30%;
-  float: left;
-  margin-right: 5%;
-  margin-bottom: 3em;
-}
-@media(max-width:768px) {
-    .one_third {
-    width: 45%;
-    margin-right: 3%;
-    margin-left: 2%;
-    }
+@media only screen and (max-width:990px){
+    .pricingTable{ margin-bottom: 50px; }
 }
 
-.pricing {
-  background: #fff;
-  text-align: center;
-  padding:0;
-}
-.last {
-  margin-right: 0 !important;
-}
-.pricing_middle ul li:nth-child(2n-1) {
-}
-.pricing_middle ul li:hover {
- color: #000;
-  background-color: #F9F9F9;
-  transition: 0.5s all;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -o-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-}
