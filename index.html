@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
-                    <a href="#" class="page-scroll btn btn-xl btn-servis">заказать сайт</a>
+                    <button type="button" class="btn btn-xl btn-primary btn-lg btn-servis" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                 </div>
             </div>
         </div>
@@ -350,7 +350,7 @@
                                 <li>Домен и хостинг на 1 год в подарок</li>
                             </ul>
                         </div>
-                        <a href="#" class="btn-xl">заказать</a>
+                        <button type="button" class="btn btn-xl" data-toggle="modal" data-target="#ModalMessage"">заказать</button>
                     </div>
                 </div>
          
@@ -372,7 +372,7 @@
                                 <li>Домен и хостинг на 1 год в подарок</li>
                             </ul>
                         </div>
-                        <a href="#" class="btn-xl">заказать</a>
+                        <button type="button" class="btn btn-xl" data-toggle="modal" data-target="#ModalMessage"">заказать</button>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
@@ -393,7 +393,7 @@
                                 
                             </ul>
                         </div>
-                        <a href="#" class="btn-xl">заказать</a>
+                        <button type="button" class="btn btn-xl" data-toggle="modal" data-target="#ModalMessage"">заказать</button>
                     </div>
                 </div>
                     <div class="col-md-3 col-sm-6">
@@ -414,7 +414,7 @@
                                
                             </ul>
                         </div>
-                        <a href="#" class="btn-xl">заказать</a>
+                        <button type="button" class="btn btn-xl" data-toggle="modal" data-target="#ModalMessage"">заказать</button>
                     </div>
                 </div>
             </div>
@@ -531,7 +531,7 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
@@ -561,7 +561,7 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
@@ -591,7 +591,7 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
@@ -621,7 +621,7 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
@@ -651,7 +651,7 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
@@ -681,12 +681,68 @@
                             </ul>
                             <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i>Закрыть</button>
                             <span class="otstyp"></span>
-                            <button type="button" class="btn btn-xl">заказать сайт</button>
+                            <button type="button" class="btn btn-xl btn-primary btn-lg" data-toggle="modal" data-target="#ModalMessage"">заказать сайт</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!--Форма вслывающего окна-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="gform" name="gform">
+      <div class="modal-dialog">
+        <form id="gform" name="gform" role="form" action="https://docs.google.com/forms/d/e/1FAIpQLSfxbgX4p04Z32u9vzUVeeQd1XQWeG5vi2uGNwERvKtcXW6zdQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+          <div class="modal-content">
+            <div class="modal-header btn-primary">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="text-center"  id="myModalLabel">Заявка</h4>
+            </div>
+            <div class="modal-body">
+              <br />
+              <!-- Select Destinataire -->
+              <div class="control-group">
+                <label for="destinataire">Выбирите услугу заказа</label>
+                <select name="entry.1579119378" id="entry.1579119378" class="form-control">
+                  <option value="Простой сайт" selected="selected" name="entry.1579119378" id="entry.1579119378">Простой сайт</option>
+                  <option value="Сложный сайт" selected="selected" name="entry.1579119378" id="entry.1579119378">Сложный сайт</option>
+                  <option value="Поддержка" selected="selected" name="entry.1579119378" id="entry.1579119378">Поддержка сайта</option>
+                  <option value="seo" selected="selected" id="entry.1579119378" name="entry.1579119378">SEO</option>
+                </select>
+              </div>
+              <br />
+              <!-- input Sujet -->
+              <div class="control-group">
+                <label for="destinataire">Имя</label>
+                <input  name="entry.1771693373" id="entry.1771693373" type="text" class="form-control">
+              </div>
+              <br />
+              <label for="destinataire">Email</label>
+              <input name="entry.710078193" type="email" id="entry.710078193" class="form-control" placeholder="введите адрес электронной почты" required>
+              <br />
+              <label for="destinataire">Телефон</label>
+              <input name="entry.363617345" type="phone" id="entry.363617345" class="form-control" placeholder="введите номер телефона" required>
+              <!-- TextArea Message -->
+              <br />
+              <div class="control-group">
+                <label for="destinataire">Message</label>
+                <textarea id="entry.1465861037" name="entry.1465861037" class="form-control" rows="5"></textarea>
+              </div>
+              <br />
+            </div>
+            <div class="modal-footer">
+              <div class="text-center">
+                <button id="btn_submit" type="submit" class="btn btn-xl btn-submit">Отправить</button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}">
+        </iframe>
+      </div>
+      
     </div>
 
     <!-- jQuery Version 1.11.0 -->
@@ -710,6 +766,13 @@
     $('#newsletter').on('submit', function(e) {
       $('#newsletter *').fadeOut(2000);
       $('#newsletter').prepend('Ваша заявка отправлена, через некоторое время мы с Вами свяжемся');
+      });
+    </script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(1000);
+      $('#gform').prepend("<p class='gmess'>Ваша заявка отправлена, через некоторое время мы с Вами свяжемся</p>");
       });
     </script>
     <script>

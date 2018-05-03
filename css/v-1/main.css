@@ -1078,3 +1078,13 @@ ul.social-buttons li a:active {
     .pricingTable{ margin-bottom: 50px; }
 }
 
+.gmess{
+    color: #fff;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    line-height: normal;
+}
+.fade.in {
+    background: #0000008c;
+}
