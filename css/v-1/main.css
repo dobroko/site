@@ -1088,3 +1088,6 @@ ul.social-buttons li a:active {
 .fade.in {
     background: #0000008c;
 }
+.close {
+    font-size: 50px;
+}
